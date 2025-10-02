@@ -6,7 +6,7 @@
 </head>
 <body>
 <!-- Preloader -->
-<div id="preloader">
+{{--<div id="preloader">
     <div id="ctn-preloader" class="ont-preloader">
         <div class="animation-preloader">
             <div class="spinner"></div>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 
 <div class="ecaps-page-wrapper">
     <!-- Sidebar -->
@@ -44,7 +44,7 @@
         <livewire:admin.layout.header/>
         <!-- Content -->
         <div class="main-content">
-            @include('livewire.admin.layout.head')
+            @include('livewire.admin.layout.showTitle')
             {{$slot}}
         </div>
     </div>

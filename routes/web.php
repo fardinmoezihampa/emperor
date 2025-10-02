@@ -10,5 +10,6 @@ Route::get('/', function () {
 });*/
 
 Route::get('/', Index::class)->name('home');
+
 Route::get('/dashboard', Dashboard::class)->name('dashboard');
 
