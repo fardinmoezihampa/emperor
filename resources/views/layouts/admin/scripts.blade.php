@@ -22,5 +22,30 @@
 <script src="/admin/js/default-assets/radar.js"></script>
 <script src="/admin/js/default-assets/dashboard-2.js"></script>
 
+<script src="{{asset('admin/src/plugins/src/sweetalerts2/sweetalerts2.min.js')}}"></script>
+<script src="{{asset('admin/src/plugins/src/sweetalerts2/custom-sweetalert.js')}}"></script>
+<script src="{{asset('admin/plugins/select2/js/select2.full.min.js')}}"></script>
 
 @stack('scripts')
+
+<script>
+    document.addEventListener('success', function (event) {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: event.detail,
+            showConfirmButton: false,
+            timer: 1500
+        })
+    })
+
+    document.addEventListener('error', function (event) {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: event.detail,
+            showConfirmButton: false,
+            timer: 3000
+        })
+    })
+</script>

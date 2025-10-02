@@ -5,6 +5,11 @@
 <!-- Favicon -->
 <link rel="icon" href="/admin/img/core-img/favicon.png">
 
-<link rel="stylesheet" href="admin/style.css">
+<link rel="stylesheet" href="{{asset('admin/src/plugins/src/sweetalerts2/sweetalerts2.css')}}">
+<link href="{{asset('admin/src/assets/css/dark/scrollspyNav.css')}}" rel="stylesheet" type="text/css"/>
+<link href="{{asset('admin/src/plugins/css/dark/sweetalerts2/custom-sweetalert.css')}}" rel="stylesheet"
+      type="text/css"/>
+
+<link rel="stylesheet" href="{{asset('admin/style.css')}}">
 
 @stack('links')
