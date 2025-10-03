@@ -11,7 +11,13 @@
                     برچسب ها
                 </a>
             </li>
-            <li><a href="#"> <i class="fa fa-circle-o text-navy"></i> مهم</a></li>
+            <li>
+                <a {{Request::routeIs('admin.settings.footer.social')? 'style=color:#04a9f5;':''}}
+                   href="{{route('admin.settings.footer.social')}}">
+                    <i class="fa {{Request::routeIs('admin.settings.footer.social')? 'fa-circle':'fa-circle-o'}} text-navy"></i>
+                    شبکه های اجتماعی
+                </a>
+            </li>
             <li><a href="#"> <i class="fa fa-circle-o text-navy"></i> اجتماعی</a></li>
             <li><a href="#"> <i class="fa fa-circle-o text-navy"></i> دیگر</a></li>
         </ul>
